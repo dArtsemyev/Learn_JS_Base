@@ -1,0 +1,12 @@
+body {
+    background-color: bisque;
+}
+.autos {
+    display: flex;
+}
+.autoCard {
+    display: block;
+    margin: 5px;
+    text-align: center;
+    background-color: aliceblue;
+}
