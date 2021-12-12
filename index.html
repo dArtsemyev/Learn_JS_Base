@@ -8,10 +8,43 @@
 <body>    
     <script>
         //for loop
-        let sheepCounted = 1
-        for(sheepCounted; sheepCounted <= 10; sheepCounted++) {
-            console.log('Sheep\'s counted: ' + sheepCounted)
+        let y = 1
+        for(let x = 3; x < 100; x*=3) {
+            console.log('3 pow ' + y++ +': ' + x)
         }  
+
+        const animals = ['Cat', 'Dog', 'Mouse', 'Сhicken']
+        for (let i = 0; i < animals.length; i++) {
+            animals[i] = animals[i] + ' - it\'s a great animal!'
+        }
+        console.log(animals)
+
+        const alphabet = 'abcdefjhijklmnopqrstuvwxyz'
+        let randomStr = ''
+        for (i = 0; i < 4; i++) {
+            randomStr += alphabet[Math.round(Math.random()*26)]
+            console.log(randomStr)
+        }
+
+        console.log('#######################')
+
+        var input = "javascript is awesome";
+        var output = "";
+        for(i = 0; i < input.length; i++) {
+            if(input[i] == 'a') {
+                output += '4'                
+            } else if(input[i] == 'e') {
+                output += '3'               
+            } else if(input[i] == 'i') {
+                output += '1'
+            }  else if(input[i] == 'o') {
+                output += '0'
+            } else {
+                output += input[i]
+            }
+        }
+        console.log(output)
+
     </script>
 </body>
 </html>
