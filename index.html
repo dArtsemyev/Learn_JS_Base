@@ -17,7 +17,19 @@
 
         word = words[Math.floor(Math.random() * words.length)]
 
-        console.log(word)
+        console.log(`Selected word: ${word}`)
+
+        // Create ansver array
+        let ansverArray = []
+
+        for(let i = 0; i < word.length; i++){
+            ansverArray[i] = "_"
+        }
+
+        let remainingLetters = word.length
+
+        console.log(`Ansver array: ${ansverArray}`)
+        console.log(`Remaining Letters: ${remainingLetters}`)
 
     </script>
 </body>
