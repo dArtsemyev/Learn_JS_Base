@@ -9,10 +9,10 @@
     <script>
         // Select a word from the array
         const words = [
-            "рыба", 
-            "слон", 
-            "хомяк", 
-            "сантехника"
+            'рыба', 
+            'слон', 
+            'хомяк', 
+            'сантехника'
         ]
 
         word = words[Math.floor(Math.random() * words.length)]
@@ -23,7 +23,7 @@
         let answerArray = []
 
         for(let i = 0; i < word.length; i++){
-            answerArray[i] = "_"
+            answerArray[i] = '_'
         }
 
         let remainingLetters = word.length
@@ -35,10 +35,10 @@
         while(remainingLetters > 0) {
             // Основной код
             // Показываем состояние игры
-            alert(answerArray.join(" "))
+            alert(answerArray.join(' '))
 
             // Запрашиваем вариант ответа
-            let guess = prompt("Угадай букву или нажми 'Отмена' для выхода из игры.")
+            let guess = prompt('Угадай букву или нажми "Отмена" для выхода из игры.')
             
             if(guess === null) {
                 break;
@@ -52,10 +52,12 @@
                         remainingLetters--
                     }
                 }
-            }
-
-            // Обновляем ansverArray и remainingLetters для каждого входжения угаданной буквы
-        }  
+            }            
+        } 
+        
+        // Отображаем ответ, поздравляем игрока
+        alert(answerArray.join(' '))
+        alert(`Отлично! Было задано слово: "${word}"`)
 
     </script>
 </body>
