@@ -19,25 +19,27 @@
 
         console.log(`Selected word: ${word}`)
 
-        // Create ansver array
-        let ansverArray = []
+        // Create answer array
+        let answerArray = []
 
         for(let i = 0; i < word.length; i++){
-            ansverArray[i] = "_"
+            answerArray[i] = "_"
         }
 
         let remainingLetters = word.length
 
-        console.log(`Ansver array: ${ansverArray}`)
+        console.log(`Answer array: ${answerArray}`)
         console.log(`Remaining Letters: ${remainingLetters}`)
 
         // Game loop
         while(remainingLetters > 0) {
             // Основной код
             // Показываем состояние игры
+            alert(answerArray.join(" "))
+
             // Запрашиваем вариант ответа
             // Обновляем ansverArray и remainingLetters для каждого входжения угаданной буквы
-        }
+        }  
 
     </script>
 </body>
