@@ -7,14 +7,18 @@
 </head>
 <body>    
     <script>
-        //Alert
-        let likesPigs = confirm("Do you like pigs?")
-        if(likesPigs) {
-            alert("Ok!")
-        } else {
-            console.log("Really?")
-        }
-        
+        // Select a word from the array
+        const words = [
+            "рыба", 
+            "слон", 
+            "хомяк", 
+            "сантехника"
+        ]
+
+        word = words[Math.floor(Math.random() * words.length)]
+
+        console.log(word)
+
     </script>
 </body>
 </html>
