@@ -10,15 +10,15 @@
         // Select a word from the array
         const words = [
             'Рыба', 
-            'слон', 
-            'хомяк', 
+            'Слон', 
+            'Хомяк', 
             'Сантехника',
-            'ученик',
-            'вино',
+            'Ученик',
+            'Вино',
             'Больница',
         ]
 
-        word = words[Math.floor(Math.random() * words.length)]
+        word = words[Math.floor(Math.random() * words.length)].toLowerCase()
 
         console.log(`Selected word: ${word}`)
 
@@ -41,7 +41,7 @@
             alert(answerArray.join(' '))
 
             // Запрашиваем вариант ответа
-            let guess = prompt('Угадай букву или нажми "Отмена" для выхода из игры.')
+            let guess = prompt('Угадай букву или нажми "Отмена" для выхода из игры.').toLowerCase()
             
             if(guess === null) {
                 break;
